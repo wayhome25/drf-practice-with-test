@@ -1,15 +1,6 @@
-from django.http.response import JsonResponse, HttpResponse
-from django.shortcuts import render, get_object_or_404
-from django.views.decorators.csrf import csrf_exempt
-from rest_framework import status
-from rest_framework.decorators import api_view
 from rest_framework.generics import GenericAPIView
 from rest_framework.mixins import (ListModelMixin, CreateModelMixin, RetrieveModelMixin, UpdateModelMixin,
                                    DestroyModelMixin)
-from rest_framework.parsers import JSONParser
-from rest_framework.response import Response
-from rest_framework.views import APIView
-
 from snippets.models import Snippet
 from snippets.serializers import SnippetSerializer
 

@@ -9,4 +9,3 @@ class SnippetFactory(factory.DjangoModelFactory):
 
     class Meta:
         model = Snippet
-
