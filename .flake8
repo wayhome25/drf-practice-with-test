@@ -1,0 +1,10 @@
+[flake8]
+
+exclude =
+    manage.py,
+    migrations,
+    */settings/*.py,
+    settings.py,
+    quickstart
+
+max-line-length=120

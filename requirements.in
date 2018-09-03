@@ -2,6 +2,7 @@ codecov==2.0.15
 Django==1.11
 djangorestframework==3.8.2
 factory-boy==2.11.1
+flake8==3.5.0
 httpie==0.9.9
 pip-tools==2.0.2
 Pygments==2.2.0
