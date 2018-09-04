@@ -1,8 +1,11 @@
+from rest_framework import status
+from rest_framework.test import APIRequestFactory
+from rest_framework.test import APITestCase
+from rest_framework.test import force_authenticate
+
 from django.contrib.auth.models import User
 from django.test import TestCase
 from django.urls.base import reverse
-from rest_framework import status
-from rest_framework.test import APIRequestFactory, force_authenticate, APITestCase
 
 from quickstart.views import UserViewSet
 
@@ -53,4 +56,3 @@ class UserViewSetTestCase(APITestCase):
 
         self.assertEquals(response_2.status_code, 201)
         self.assertEquals(response_2.data.get('username'), 'test5')
-

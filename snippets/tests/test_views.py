@@ -1,6 +1,7 @@
-from django.urls.base import reverse
 from rest_framework import status
 from rest_framework.test import APITestCase
+
+from django.urls.base import reverse
 
 from snippets.factories import SnippetFactory
 from snippets.models import Snippet
