@@ -9,7 +9,7 @@ install:
 before_script:
 
 # migration test
- - python3 manage.py migrate --noinput
+  - python3 manage.py migrate --noinput
 
 # PEP8
   - flake8
