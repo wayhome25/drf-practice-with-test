@@ -1,0 +1,4 @@
+ignore:
+  - "*/migrations/*"
+  - "manage.py"
+  - "apps.py"
