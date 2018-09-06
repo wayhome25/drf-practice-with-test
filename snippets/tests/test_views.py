@@ -84,3 +84,8 @@ class SnippetDetailTestCase(APITestCase):
         self.client.force_login(self.user_2)
         response = self.client.delete(reverse('snippet-detail', args=[1]))
         self.assertEqual(response.status_code, status.HTTP_403_FORBIDDEN)
+
+    def test_get_hightlight(self):
+        response = self.client.get(reverse('snippet-highlight', args=[1]))
+        self.assertEqual(response.status_code, status.HTTP_200_OK)
+        self.assertContains(response, self.snippet.highlighted)
