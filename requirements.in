@@ -1,4 +1,4 @@
-codecov==2.0.15
+codecov==2.0.16
 Django==1.11
 djangorestframework==3.8.2
 factory-boy==2.11.1
